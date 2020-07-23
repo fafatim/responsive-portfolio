@@ -97,14 +97,14 @@ textarea {
    }
   .contain-wrapper{
     width: 90%;
-    margin: 50px 0;
+    margin: 40px 0;
   }
   img {
  width: 100%;
 }
 
 .title{
-  color: #095256;
+  color: #ff847c;
   text-transform: capitalize;
   font-weight: bold;
   font-family: 'Roboto Slab', serif;
@@ -112,7 +112,11 @@ textarea {
   text-align: center;
 }
 .white{
-  color: white;
+  color: black;
+
+}
+
+.white, .color{
   text-transform: capitalize;
   font-weight: bold;
   text-align: center;
@@ -126,26 +130,31 @@ textarea {
     background-image:url('../img/hero-image.png');
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 600px;
 
 }
 nav{
-  background-color: #545b628c
+  background-color: #9db2b8e3;
 }
 
+
+
   .intro {
-    padding-top: 60px;
+    padding-top: 120px;
+    text-align: center;
+
   }
   #mask{
-    height: 80vh;
+    height: 600px;
     background-color: #1b18189e;
   }
   .intro h1{
     margin: 0;
-    color: #a8e6cf;
+    color: #ff847c;
     font-size: 2em;
     text-transform: capitalize;
     font-weight: 600;
+
 
 
   }
@@ -154,7 +163,17 @@ nav{
     margin-top: 20px;
     color:whitesmoke;
     font-weight: 600;
+    font-size: 1.3em;
+
 }
+ .intro button{
+   margin-top: 30px;
+   color: white;
+
+ }
+  .btn-outline-primary{
+   border-color: #ff847c !important;
+ }
 
 
 /* work section */
@@ -170,66 +189,70 @@ nav{
  #work .full-width{
 
   text-align: center;
+  margin-bottom: 40px;
 
+}
+#work .half-width:nth-child(1){
+  border: 2px solid #ff847c;
 }
 
 #work .link{
   text-decoration: none;
-  color: #bdbf09;
+  color:#ff847c;
   font-size: 1.5em;
   font-weight: bold;
   text-transform: capitalize;
 
 }
+
 #work .project-type{
   font-size: 1.2em;
   font-weight: 500;
   text-transform: capitalize;
+  text-align: inherit;
   color: #095256;
 }
 #work .paragraph{
   font-size: 1em;
   font-weight: 400;
   color:  #095256;
+  text-align: inherit;
 
-
-  text-transform: capitalize;
 }
 #work .title-top{
   margin-top: 16px;
 }
+#work .contain-wrapper{
+  margin-bottom: 0;
+}
+
 
 
 /* about section */
 #about{
-  background-color: #087e8b;
+  background-color: #ff847ca6;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
-#about .full-width{
- text-align: center;
 
-}
+
 #about .half-width{
   padding-top: 40px;
+  text-align: left;
+
 }
 #about img{
   border: 3px solid #17a2b8ad;
 }
 #about .statement{
-  color: white;
-  font-size: 1.1em;
-
-
+ font-size: 1.1em;
 }
-#resume-button{
-  background-color:  #bdbf09;
-}
+
 
 /* contact section */
 #contact{
-  background-color: #095156;
+  background-color: #c3e5edab;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -240,7 +263,7 @@ nav{
 }
 #contact .full-width{
   margin: 40px 0;
-  color: white;
+  color: black;
   text-align: center;
 }
 #contact .social{
@@ -259,7 +282,7 @@ nav{
   padding: 0 30px;
 }
 #contact .social-icons p{
-  background-color: #bdbf09;
+  background-color: #ff847c;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -271,6 +294,11 @@ nav{
 }
 #contact .social-icons p i{
   font-size: 1.3125em;
+
+}
+#contact .copyright{
+  width:100%;
+  font-weight: bold;
 
 }
 
@@ -367,15 +395,44 @@ nav{
 @media only screen and (min-width:768px){
   .contain-wrapper{
     max-width: 800px;
+}
+nav {
+  font-size: 1.3em !important;
+}
+.navbar-brand{
+  font-size: 1.3em !important;
+}
+.nav-item-middle{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+.intro {
+  padding-top: 110px;
 
-  }
+}
+
+.intro h1{
+  margin: 0;
+  font-size: 2.5em;
+
+}
+.intro p{
+font-size: 1.6em;
+ margin : 20px 150px 0 150px;
+}
   #work .all-work{
     margin-top: 50px;
   }
   #work .full-width{
     display: flex;
     justify-content: space-between;
+  }
+  .title{
+    font-size: 2.5em;
+  }
+  #work .contain-wrapper{
+    width: 95%;
   }
   #work .half-width{
     width:46%;
@@ -392,12 +449,28 @@ nav{
   #work .sides{
     text-align: left;
   }
-  #about .full-width{
-    display: flex;
-    justify-content: space-between;
+
+  #work .link{
+
+    font-size: 1.8em;
+
+
   }
+  #work .project-type{
+    font-size: 1.5em;
+
+  }
+  #work .paragraph{
+    font-size: 1.2em;
+}
+#about .full-width{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
   #about .half-width{
-    width: 48%;
+    width: 75%;
   }
 
 #about .statement{
@@ -417,10 +490,10 @@ nav{
     margin-left: 10px;
     margin-right: 15px;
   }
-  #contact .copyright{
-    width:100%;
-    color: white;
+  #contact .contain-wrapper{
+    width: 92%;
   }
+
   #contact .social{
     margin:  0;
   }
@@ -430,8 +503,29 @@ nav{
   .contain-wrapper{
     max-width: 1100px;
 }
+.intro {
+  padding-top: 140px;
+
+}
+.intro h1{
+  margin: 0;
+  font-size: 3em;
+}
+.intro p{
+font-size: 1.8em;
+}
+
 #work .half-width, #about .half-width{
   width: 47%;
+}
+#about .full-width{
+  justify-content: space-between;
+}
+#about .contain-wrapper{
+  margin-bottom: 60px;
+}
+#about .statement {
+  font-size: 1.5em;
 }
 #contact .social-icons .middle{
   margin-left: 30px;
